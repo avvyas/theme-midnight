@@ -1,0 +1,3 @@
+## Fixes
+
+- Fix for 'Midnight.dark' color scheme
