@@ -10,7 +10,7 @@ Activate the 'Theme' and 'Color-Scheme' by modifying your user preferences file,
 #### Example
 ```
 {
-  "color_scheme": "Packages/User/Midnight.dark.tmTheme",
+  "color_scheme": "Packages/Theme - Midnight/Midnight.dark.tmTheme",
   "theme": "Midnight.sublime-theme",
 }
 ```
