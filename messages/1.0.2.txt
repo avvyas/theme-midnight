@@ -1,0 +1,3 @@
+## Fixes
+- Updated some icons to have better contrast.
+- Fix for color scheme setting defined in 'install.txt'
