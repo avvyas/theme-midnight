@@ -10,6 +10,11 @@
 //| Red:    rgb(242, 72, 34)   | #F24822  -- such as close button
 //| Yellow: rgb(227, 194, 27)  | #E3C21B  -- such as dirty close button
 //| Green:  rgb(79, 91, 9)     | #4F5B09  -- Scrollbar color
+//|
+//| Dark BG:    [9, 11, 13]
+//| Lighter BG: [29, 31, 33]
+//| Blue:       [26, 70, 102]
+//|
 //+---------------------------------------------------------------------
 [
 //| Tabs
@@ -640,14 +645,15 @@
         "class": "sidebar_container",
         "layer0.tint": [29, 31, 33],
         "layer0.opacity": 1,
-        "content_margin": [5, 5, 0, 5]
+        "content_margin": [0, 5, 0, 5]
     },
 
     // Sidebar tree
     {
         "class": "sidebar_tree",
         "row_padding": [5, 5],
-        "indent": 10,
+        "indent": 15,
+        "indent_offset": 0,
         "indent_top_level": true,
         "dark_content": true
     },
@@ -657,13 +663,19 @@
         "class": "tree_row",
         "layer0.tint": [9, 11, 13],
         "layer0.opacity": 0,
-        "layer0.inner_margin": [1, 1]
+        "layer0.inner_margin": [1, 1],
+        "layer1.tint": [26, 70, 102],
+        "layer1.draw_center": false,
+        "layer1.inner_margin": [1, 0, 0, 0],
+        "layer1.opacity": 0
     },
     // Sidebar row selected
     {
         "class": "tree_row",
         "attributes": ["selected"],
-        "layer0.opacity": 1
+        "content_margin": [15, 0, 0, 0],
+        "layer0.opacity": 1,
+        "layer1.opacity": 1 //{ "target": 1.0, "speed": 5.0, "interpolation": "smoothstep" }
     },
 
     // Sidebar heading
@@ -675,7 +687,7 @@
     // Sidebar heading selected
     {
         "class": "sidebar_heading",
-        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
         "shadow_offset": [0,0]
     },
     // Sidebar entry
@@ -686,20 +698,26 @@
     // Sidebar folder entry
     {
         "class": "sidebar_label",
-        "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
+        "parents": [{ "class": "tree_row", "attributes": ["expandable"] }],
         "color": [121, 125, 117]
     },
     {
         "class": "sidebar_label",
-        "parents": [{"class": "tree_row","attributes": ["hover"]}],
-        "color": [192,197,206]
+        "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
+        "color": [197, 200, 198]
     },
     // Sidebar entry selected
     {
         "class": "sidebar_label",
-        "parents": [{"class": "tree_row","attributes": ["selected"]}],
+        "parents": [{ "class": "tree_row","attributes": ["selected"] }],
         "color": [197, 200, 198]
     },
+    /* Disabling selected folder highlight
+    {
+      "class": "sidebar_label",
+      "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
+      "color": [197, 200, 198]
+    }, */
 
 //
 // SIDEBAR - OPEN FILE ICONS
@@ -808,15 +826,15 @@
     {
         "class": "icon_regex",
         "layer0.texture": "Theme - Midnight/Midnight/regex.png",
-        "layer0.tint": [79, 91, 102], // 02
+        "layer0.tint": [79, 91, 102],
         "layer0.opacity": 1,
         "content_margin": 8
 
     },
     {
         "class": "icon_regex",
-        "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-        "layer0.tint": [239, 241, 245] // 07
+        "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
+        "layer0.tint": [239, 241, 245]
     },
     // Case sensitive search button
     {
