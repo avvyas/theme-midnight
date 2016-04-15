@@ -1,185 +1,185 @@
-//+---------------------------------------------------------------------
-//| Color scheme
-//| BLK90:  rgb(17, 20, 16)    | #111410  -- Panel and most backgrounds
-//| BLK80:  rgb(31, 35, 37)    | #1F2325  -- Sidebar
-//| BLK70:  rgb(51, 61, 70)    | #232721  -- Mini / Quick Panel selected row
-//| BLK50:  rgb(121, 125, 117) | #797D89  -- Tab label unselected
-//| BLK40:  rgb(223, 225, 215) | #DFE1D7  -- Tab label selected label / tab hover
-//| Blue:   rgb(26, 70, 102)   | #1A4666  -- Tab element selected state
-//| BlueD:  rgb(16, 42, 63)    | #102A3F  -- Tab element hover state
-//| Red:    rgb(242, 72, 34)   | #F24822  -- such as close button
-//| Yellow: rgb(227, 194, 27)  | #E3C21B  -- such as dirty close button
-//| Green:  rgb(79, 91, 9)     | #4F5B09  -- Scrollbar color
-//|
-//| Dark BG:    [9, 11, 13]
-//| Lighter BG: [29, 31, 33]
-//| Blue:       [26, 70, 102]
-//|
-//+---------------------------------------------------------------------
+/*
+ | Color scheme
+ | BLK90:  rgb(17, 20, 16)    | #111410  -- Panel and most backgrounds
+ | BLK80:  rgb(31, 35, 37)    | #1F2325  -- Sidebar
+ | BLK70:  rgb(51, 61, 70)    | #232721  -- Mini / Quick Panel selected row
+ | BLK50:  rgb(121, 125, 117) | #797D89  -- Tab label unselected
+ | BLK40:  rgb(223, 225, 215) | #DFE1D7  -- Tab label selected label / tab hover
+ | Blue:   rgb(26, 70, 102)   | #1A4666  -- Tab element selected state
+ | BlueD:  rgb(16, 42, 63)    | #102A3F  -- Tab element hover state
+ | Red:    rgb(242, 72, 34)   | #F24822  -- such as close button
+ | Yellow: rgb(227, 194, 27)  | #E3C21B  -- such as dirty close button
+ | Green:  rgb(79, 91, 9)     | #4F5B09  -- Scrollbar color
+ |
+ | Dark BG:    [9, 11, 13]
+ | Lighter BG: [29, 31, 33]
+ | Blue:       [26, 70, 102]
+ |
+ +---------------------------------------------------------------------*/
+
 [
-//| Tabs
-//+---------------------------------------------------------------------
-    //| Tabs - general
-    //+---------------------------------------------------------------------
-        {
-            "class": "tabset_control",
-            "layer0.tint": [29, 31, 33],
-            "layer0.inner_margin": 10,
-            "layer0.opacity": 1,
-            "content_margin": [5, 0, 5, -1],
-            "tab_overlap": 0,
-            "tab_width": 120,
-            "tab_min_width": 40,
-            "tab_height": 28,
-            "mouse_wheel_switch": false
-        },
-
-        //  Tab element
-        {
-            "class": "tab_control",
-            "content_margin": [8, 0],
-            "max_margin_trim": 0,
-            "hit_test_level": 0,
-            "layer0.tint": [29, 31, 33],
-            "layer0.inner_margin": [5, 5],
-            "layer0.opacity": 1,
-            "layer1.draw_center": false,
-            "layer1.inner_margin": [0, 1, 0, 0],
-            "layer1.opacity": 0
-        },
-
-        //  Tab close state
-        {
-            "class": "tab_control",
-            "settings": ["show_tab_close_buttons"],
-            "content_margin": [8, 0, 5, 0]
-        },
-
-        //  Tab hover state
-        {
-            "class": "tab_control",
-            "attributes": ["hover"],
-            "layer0.tint": [9, 11, 13],
-            "layer1.tint": [26, 70, 102],
-            "layer1.opacity": 1
-        },
-
-        //  Tab active state
-        {
-            "class": "tab_control",
-            "attributes": ["selected"],
-            "layer0.tint": [9, 11, 13],
-            "layer1.tint": [26, 70, 102],
-            "layer1.opacity": 1
-        },
-
-        //  Tab dirty state (close button hidden)
-        {
-            "class": "tab_control",
-            "settings": ["!show_tab_close_buttons"],
-            "attributes": ["dirty"],
-            "content_margin": [5, 0]
-        },
 
 
-    //| Tab labels
-    //+---------------------------------------------------------------------
-        {
-            "class": "tab_label",
-            "fade": true,
-            "fg": [121, 123, 121],
-            "font.size": 11
-        },
+/*
+ | Tabs
+ +---------------------------------------------------------------------*/
+    {
+        "class": "tabset_control",
+        "layer0.tint": [29, 31, 33],
+        "layer0.inner_margin": 10,
+        "layer0.opacity": 1,
+        "content_margin": [5, 0, 5, -1],
+        "tab_overlap": 0,
+        "tab_width": 120,
+        "tab_min_width": 40,
+        "tab_height": 28,
+        "mouse_wheel_switch": false
+    },
 
-        {
-            "class": "tab_label",
-            "parents": [{ "class": "tab_control", "attributes": ["hover"] }],
-            "fg": [197, 200, 198]
-        },
+    //  Tab Item
+    {
+        "class": "tab_control",
+        "content_margin": [8, 0],
+        "max_margin_trim": 0,
+        "hit_test_level": 0,
+        "layer0.tint": [29, 31, 33],
+        "layer0.inner_margin": [5, 5],
+        "layer0.opacity": 1,
+        "layer1.draw_center": false,
+        "layer1.inner_margin": [0, 1, 0, 0],
+        "layer1.opacity": 0
+    },
 
-        {
-            "class": "tab_label",
-            "parents": [{ "class": "tab_control", "attributes": ["selected"] }],
-            "fg": [197, 200, 198]
-        },
+    //  Tab close state
+    {
+        "class": "tab_control",
+        "settings": ["show_tab_close_buttons"],
+        "content_margin": [8, 0, 5, 0]
+    },
 
-        {
-            "class": "tab_label",
-            "attributes": ["transient"],
-            "font.italic": true
-        },
+    //  Tab hover
+    {
+        "class": "tab_control",
+        "attributes": ["hover"],
+        "layer0.tint": [9, 11, 13],
+        "layer1.tint": [26, 70, 102],
+        "layer1.opacity": 1
+    },
 
-    //| Tab buttons :: Close button
-    //+---------------------------------------------------------------------
-        //  Size
-        {
-            "class": "tab_close_button",
-            "settings": ["show_tab_close_buttons"],
-            "content_margin": [8, 8]
-        },
+    //  Tab active state
+    {
+        "class": "tab_control",
+        "attributes": ["selected"],
+        "layer0.tint": [9, 11, 13],
+        "layer1.tint": [26, 70, 102],
+        "layer1.opacity": 1
+    },
 
-        {
-            "class": "tab_close_button",
-            "layer0.texture": "Theme - Midnight/Midnight/close.png",
-            "layer0.tint": [223, 225, 215],
-            "layer0.opacity": 0
-        },
+    //  Tab dirty state (close button hidden)
+    {
+        "class": "tab_control",
+        "settings": ["!show_tab_close_buttons"],
+        "attributes": ["dirty"],
+        "content_margin": [5, 0]
+    },
 
-        {
-            "class": "tab_close_button",
-            "parents": [{ "class": "tab_control", "attributes": ["hover"] }],
-            "layer0.texture": "Theme - Midnight/Midnight/close.png",
-            "layer0.tint": [242, 72, 34],
-            "layer0.opacity": 1
-        },
 
-        {
-            "class": "tab_close_button",
-            "parents": [{ "class": "tab_control" }],
-            "attributes": ["hover"],
-            "layer0.tint": [242, 72, 34],
-            "layer0.opacity": 1
-        },
+    // Tab Typography
+    {
+        "class": "tab_label",
+        "fade": true,
+        "fg": [121, 123, 121],
+        "font.size": 11
+    },
 
-        {
-            "class": "tab_close_button",
-            "parents": [{ "class": "tab_control", "attributes": ["selected"] }],
-            "layer0.opacity": 1
-        },
+    {
+        "class": "tab_label",
+        "parents": [{ "class": "tab_control", "attributes": ["hover"] }],
+        "fg": [197, 200, 198]
+    },
 
-        //  Tab dirty button
-        {
-            "class": "tab_close_button",
-            "parents": [{ "class": "tab_control", "attributes": ["dirty"] }],
-            "layer0.texture": "Theme - Midnight/Midnight/circle.png",
-            "layer0.tint": [227, 194, 27],
-            "layer0.opacity": 1
-        },
+    {
+        "class": "tab_label",
+        "parents": [{ "class": "tab_control", "attributes": ["selected"] }],
+        "fg": [197, 200, 198]
+    },
 
-        {
-            "class": "tab_close_button",
-            "settings": ["!show_tab_close_buttons"],
-            "parents": [{ "class": "tab_control", "attributes": ["dirty"] }],
-            "content_margin": [8, 8],
-            "layer0.opacity": 1
-        },
+    {
+        "class": "tab_label",
+        "attributes": ["transient"],
+        "font.italic": true
+    },
 
-        {
-            "class": "tab_close_button",
-            "parents": [{ "class": "tab_control", "attributes": ["dirty", "hover"] }],
-            "layer0.texture": "Theme - Midnight/Midnight/close.png",
-            "attributes": ["hover"],
-            "layer0.tint": [242, 72, 34],
-            "layer0.opacity": 1
-        },
+    // Tab buttons :: Close button
+    //  Size
+    {
+        "class": "tab_close_button",
+        "settings": ["show_tab_close_buttons"],
+        "content_margin": [8, 8]
+    },
 
-        // Tab close button pressed
-        {
-            "class": "tab_close_button",
-            "settings": ["show_tab_close_buttons"],
-            "attributes": ["pressed"],
-            "layer0.opacity": 0.5
-        },
+    {
+        "class": "tab_close_button",
+        "layer0.texture": "Theme - Midnight/Midnight/close.png",
+        "layer0.tint": [223, 225, 215],
+        "layer0.opacity": 0
+    },
+
+    {
+        "class": "tab_close_button",
+        "parents": [{ "class": "tab_control", "attributes": ["hover"] }],
+        "layer0.texture": "Theme - Midnight/Midnight/close.png",
+        "layer0.tint": [242, 72, 34],
+        "layer0.opacity": 1
+    },
+
+    {
+        "class": "tab_close_button",
+        "parents": [{ "class": "tab_control" }],
+        "attributes": ["hover"],
+        "layer0.tint": [242, 72, 34],
+        "layer0.opacity": 1
+    },
+
+    {
+        "class": "tab_close_button",
+        "parents": [{ "class": "tab_control", "attributes": ["selected"] }],
+        "layer0.opacity": 1
+    },
+
+    //  Tab dirty button
+    {
+        "class": "tab_close_button",
+        "parents": [{ "class": "tab_control", "attributes": ["dirty"] }],
+        "layer0.texture": "Theme - Midnight/Midnight/circle.png",
+        "layer0.tint": [227, 194, 27],
+        "layer0.opacity": 1
+    },
+
+    {
+        "class": "tab_close_button",
+        "settings": ["!show_tab_close_buttons"],
+        "parents": [{ "class": "tab_control", "attributes": ["dirty"] }],
+        "content_margin": [8, 8],
+        "layer0.opacity": 1
+    },
+
+    {
+        "class": "tab_close_button",
+        "parents": [{ "class": "tab_control", "attributes": ["dirty", "hover"] }],
+        "layer0.texture": "Theme - Midnight/Midnight/close.png",
+        "attributes": ["hover"],
+        "layer0.tint": [242, 72, 34],
+        "layer0.opacity": 1
+    },
+
+    // Tab close button pressed
+    {
+        "class": "tab_close_button",
+        "settings": ["show_tab_close_buttons"],
+        "attributes": ["pressed"],
+        "layer0.opacity": 0.5
+    },
 
 
 //| Fold / Unfold buttons in gutter
