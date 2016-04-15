@@ -182,13 +182,14 @@
     },
 
 
-//| Fold / Unfold buttons in gutter
-//+---------------------------------------------------------------------
+/*
+ | Fold / Unfold buttons in gutter
+ +---------------------------------------------------------------------*/
     {
         "class": "fold_button_control",
         "layer0.texture": "Theme - Midnight/Midnight/folder-closed.png",
         "layer0.inner_margin": 5,
-        "content_margin": [8, 8],
+        "content_margin": 8,
         "layer0.tint": [151, 153, 155],
         "layer0.opacity": 1
     },
