@@ -234,7 +234,7 @@
     // Container
     {
         "class": "overlay_control",
-        "content_margin": 3,
+        "content_margin": [3, 0, 3, 3],
         "layer0.tint": [29, 31, 33],
         "layer0.inner_margin": 0,
         "layer0.opacity": 1,
