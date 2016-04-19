@@ -19,6 +19,23 @@
 
 [
 
+/*
+ | Empty window background
+ +---------------------------------------------------------------------*/
+    {
+        "class": "sheet_container_control",
+        "layer0.tint": [29, 31, 33],
+        "layer0.opacity": 1
+    },
+
+/*
+ | Grid layout separator
+ +---------------------------------------------------------------------*/
+    {
+        "class": "grid_layout_control",
+        "border_size": 1,
+        "border_color": [29, 31, 33]
+    },
 
 /*
  | Tabs
@@ -181,7 +198,6 @@
         "layer0.opacity": 0.5
     },
 
-
 /*
  | Fold / Unfold buttons in gutter
  +---------------------------------------------------------------------*/
@@ -210,46 +226,6 @@
     {
         "class": "fold_button_control",
         "attributes": ["expanded", "hover"]
-    },
-
-
-/*
- | TYPOGRAPHY
- +----------------------------------------------------------------------*/
-    // Command Pannel Typography (⌘ + ⇧ + P) & (⌘ + P)
-    {
-        "class": "quick_panel_label",
-        "fg": [167, 173, 186],
-        "match_fg": [192, 197, 206],
-        "selected_fg": [192, 197, 206],
-        "selected_match_fg": [239, 241, 245]
-    },
-    {
-        "class": "quick_panel_path_label",
-        "fg": [101, 115, 126],
-        "match_fg": [167, 173, 186],
-        "selected_fg": [101, 115, 126],
-        "selected_match_fg": [167, 173, 186]
-    },
-    {
-        "class": "quick_panel_score_label",
-        "fg": [101, 115, 126],
-        "selected_fg": [101, 115, 126]
-    },
-
-    // Text input field
-    {
-        "class": "text_line_control",
-        "layer0.tint": [9, 11, 13],
-        "layer0.opacity": 1,
-        "content_margin": 5,
-        "tint_index": 0
-    },
-    {
-        "class": "text_line_control",
-        "parents": [{ "class": "overlay_control" }],
-        "layer0.opacity": 1.0,
-        "layer0.draw_center": true
     },
 
 /*
@@ -281,7 +257,6 @@
         "layer1.opacity": 0.5
     },
 
-
 /*
  | Quick Pannel (⌘ + P)
  +----------------------------------------------------------------------*/
@@ -308,9 +283,9 @@
         "layer1.opacity": 0.5
     },
 
-
-
-    //  Bottom panel
+/*
+ | Bottom panel
+ +----------------------------------------------------------------------*/
     {
         "class": "panel_control",
         "layer0.tint": [17, 20, 16],
@@ -319,66 +294,48 @@
         "content_margin": 0
     },
 
-
-    //| Code completion dropdown
-    //+---------------------------------------------------------------------
-        {
-            "class": "popup_control",
-            "content_margin": 0,
-            "layer0.tint": [0, 0, 0],
-            "layer0.opacity": 1
-        },
-
-        {
-            "class": "auto_complete",
-            "row_padding": [7, 3]
-        },
-
-        {
-            "class": "auto_complete_label",
-            "fg": [101, 115, 126, 255], // 03
-            "match_fg": [192, 197, 206, 255], // 05
-            "selected_fg": [167, 173, 186, 255], // 03
-            "selected_match_fg": [192, 197, 206, 255] // 05
-        },
-
-        {
-            "class": "table_row",
-            "layer0.tint": [0, 0, 0],
-            "layer0.opacity": 0,
-            "layer0.inner_margin": [3, 1],
-            "layer1.tint": [242, 72, 34],
-            "layer1.opacity": 0
-        },
-
-        //  Selected row for autocomplete
-        {
-            "class": "table_row",
-            "attributes": ["selected"],
-            "layer0.opacity": 1,
-            "layer1.draw_center": false,
-            "layer0.tint": [33, 37, 38],
-            "layer1.tint": [242, 72, 34],
-            "layer1.inner_margin": [2, 0, 0, 0],
-            "layer1.opacity": 1
-        },
-
-
-//| Grid layout separator
-//+---------------------------------------------------------------------
+/*
+ | Code completion dropdown
+ +----------------------------------------------------------------------*/
     {
-        "class": "grid_layout_control",
-        "border_size": 1,
-        "border_color": [29, 31, 33]
+        "class": "popup_control",
+        "content_margin": 0,
+        "layer0.tint": [0, 0, 0],
+        "layer0.opacity": 1
     },
 
-
-//| Empty window background
-//+---------------------------------------------------------------------
     {
-        "class": "sheet_container_control",
-        "layer0.tint": [29, 33, 32],
-        "layer0.opacity": 1
+        "class": "auto_complete",
+        "row_padding": [7, 3]
+    },
+
+    {
+        "class": "auto_complete_label",
+        "fg": [101, 115, 126, 255], // 03
+        "match_fg": [192, 197, 206, 255], // 05
+        "selected_fg": [167, 173, 186, 255], // 03
+        "selected_match_fg": [192, 197, 206, 255] // 05
+    },
+
+    {
+        "class": "table_row",
+        "layer0.tint": [0, 0, 0],
+        "layer0.opacity": 0,
+        "layer0.inner_margin": [3, 1],
+        "layer1.tint": [242, 72, 34],
+        "layer1.opacity": 0
+    },
+
+    //  Selected row for autocomplete
+    {
+        "class": "table_row",
+        "attributes": ["selected"],
+        "layer0.opacity": 1,
+        "layer1.draw_center": false,
+        "layer0.tint": [33, 37, 38],
+        "layer1.tint": [242, 72, 34],
+        "layer1.inner_margin": [2, 0, 0, 0],
+        "layer1.opacity": 1
     },
 
 
@@ -544,9 +501,31 @@
         "color": [223, 225, 215]
     },
 
+/*
+ | TYPOGRAPHY
+ +----------------------------------------------------------------------*/
+    // Command Pannel Typography (⌘ + ⇧ + P) & (⌘ + P)
+    {
+        "class": "quick_panel_label",
+        "fg": [167, 173, 186],
+        "match_fg": [192, 197, 206],
+        "selected_fg": [192, 197, 206],
+        "selected_match_fg": [239, 241, 245]
+    },
+    {
+        "class": "quick_panel_path_label",
+        "fg": [101, 115, 126],
+        "match_fg": [167, 173, 186],
+        "selected_fg": [101, 115, 126],
+        "selected_match_fg": [167, 173, 186]
+    },
+    {
+        "class": "quick_panel_score_label",
+        "fg": [101, 115, 126],
+        "selected_fg": [101, 115, 126]
+    },
 
-//| Typography
-//+---------------------------------------------------------------------
+
     //| Labels
     //+---------------------------------------------------------------------
         //  General labels
@@ -641,6 +620,13 @@
 
 
 
+    // Text input field
+    {
+        "class": "text_line_control",
+        "layer0.tint": [9, 11, 13],
+        "layer0.opacity": 1,
+        "content_margin": 5
+    },
 
 
 //| Sidebar
