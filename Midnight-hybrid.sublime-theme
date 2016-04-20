@@ -288,9 +288,9 @@
  +----------------------------------------------------------------------*/
     {
         "class": "panel_control",
-        "layer0.tint": [17, 20, 16],
+        "layer0.tint": [19, 21, 23],
         "layer0.opacity": 1,
-        "layer0.inner_margin": [0, 0],
+        "layer0.inner_margin": 0,
         "content_margin": 0
     },
 
@@ -311,10 +311,10 @@
 
     {
         "class": "auto_complete_label",
-        "fg": [101, 115, 126, 255], // 03
-        "match_fg": [192, 197, 206, 255], // 05
-        "selected_fg": [167, 173, 186, 255], // 03
-        "selected_match_fg": [192, 197, 206, 255] // 05
+        "fg": [101, 115, 126, 255],
+        "match_fg": [192, 197, 206, 255],
+        "selected_fg": [167, 173, 186, 255],
+        "selected_match_fg": [192, 197, 206, 255]
     },
 
     {
@@ -339,11 +339,12 @@
     },
 
 
-//| Status bar
-//+---------------------------------------------------------------------
+/*
+ | Status bar
+ +----------------------------------------------------------------------*/
     {
         "class": "status_bar",
-        "layer0.tint": [29, 31, 33],
+        "layer0.tint": [19, 21, 23],
         "layer0.opacity": 1,
         "content_margin": [5, 3],
     },
@@ -620,7 +621,9 @@
 
 
 
-    // Text input field
+/*
+ | Text input field
+ +----------------------------------------------------------------------*/
     {
         "class": "text_line_control",
         "layer0.tint": [9, 11, 13], // Also controlled by `Widget - Midnight-hybrid.stTheme` -> `background` setting.
