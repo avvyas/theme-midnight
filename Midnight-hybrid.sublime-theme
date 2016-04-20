@@ -45,7 +45,6 @@
         "layer0.tint": [29, 31, 33],
         "layer0.inner_margin": 10,
         "layer0.opacity": 1,
-        "content_margin": [5, 0, 5, -1],
         "content_margin": [0, 0, 5, -1],
         "tab_overlap": 0,
         "tab_width": 120,
@@ -90,7 +89,8 @@
         "attributes": ["selected"],
         "layer0.tint": [9, 11, 13],
         "layer1.tint": [26, 70, 102],
-        "layer1.opacity": 1
+        "layer1.opacity": 1,
+        "content_margin": [10, 0, 5, 0]
     },
 
     //  Tab dirty state (close button hidden)
