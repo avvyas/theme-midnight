@@ -627,7 +627,7 @@
         "class": "text_line_control",
         "layer0.tint": [9, 11, 13], // Also controlled by `Widget - Midnight-hybrid.stTheme` -> `background` setting.
         "layer0.opacity": 1,
-        "content_margin": 5
+        "content_margin": [5, 5, 5, 7]
     },
 
 
