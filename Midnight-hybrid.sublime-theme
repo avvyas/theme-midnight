@@ -258,14 +258,14 @@
     },
 
 /*
- | Quick Pannel (⌘ + P)
+ | Quick Pannel (⌘ + P) & (⌘ + ⌃ + P)
  +----------------------------------------------------------------------*/
     {
         "class": "quick_panel",
-        "row_padding": [15, 5],
+        "row_padding": [10, 5],
+        "dark_content": true,
         "layer0.tint": [9, 11, 13],
-        "layer0.opacity": 1,
-        "dark_content": true
+        "layer0.opacity": 1
     },
     {
         "class": "quick_panel_row",
@@ -337,7 +337,6 @@
         "layer1.inner_margin": [2, 0, 0, 0],
         "layer1.opacity": 1
     },
-
 
 /*
  | Status bar
