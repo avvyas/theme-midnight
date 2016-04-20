@@ -46,10 +46,11 @@
         "layer0.inner_margin": 10,
         "layer0.opacity": 1,
         "content_margin": [5, 0, 5, -1],
+        "content_margin": [0, 0, 5, -1],
         "tab_overlap": 0,
         "tab_width": 120,
         "tab_min_width": 40,
-        "tab_height": 28,
+        "tab_height": 24,
         "mouse_wheel_switch": false
     },
 
