@@ -43,15 +43,15 @@
 		</dict>
 
 		<dict>
-		  <key>name</key>
-		  <string>SublimeLinter Gutter Mark</string>
-		  <key>scope</key>
-		  <string>sublimelinter.gutter-mark</string>
-		  <key>settings</key>
-		  <dict>
-		    <key>foreground</key>
-		    <string>#ffffff</string>
-		  </dict>
+			<key>name</key>
+			<string>SublimeLinter Gutter Mark</string>
+			<key>scope</key>
+			<string>sublimelinter.gutter-mark</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffffff</string>
+			</dict>
 		</dict>
 
 		<!-- Keywords -->
@@ -107,7 +107,20 @@
 			<key>name</key>
 			<string>Function name</string>
 			<key>scope</key>
-			<string>entity.name.function, meta.require</string>
+			<string>entity.name.function</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#f0c674</string>
+			</dict>
+		</dict>
+
+		<!-- Variables -->
+		<dict>
+			<key>name</key>
+			<string>Storage type</string>
+			<key>scope</key>
+			<string>storage.type</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -152,15 +165,15 @@
 			</dict>
 		</dict>
 		<dict>
-		  <key>name</key>
-		  <string>Boolean</string>
-		  <key>scope</key>
-		  <string>string.bool</string>
-		  <key>settings</key>
-		  <dict>
-		    <key>foreground</key>
-		    <string>#F70069</string>
-		  </dict>
+			<key>name</key>
+			<string>Boolean</string>
+			<key>scope</key>
+			<string>string.bool</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#F70069</string>
+			</dict>
 		</dict>
 
 		<!-- Comments -->
