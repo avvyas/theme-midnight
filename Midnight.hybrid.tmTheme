@@ -176,6 +176,109 @@
 			</dict>
 		</dict>
 
+		<!-- Markdown -->
+		<dict>
+			<key>name</key>
+			<string>Markdown Titles</string>
+			<key>scope</key>
+			<string>markup.heading.markdown, markup.heading</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#b294bb</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown lists</string>
+			<key>scope</key>
+			<string>markup.list.unnumbered.markdown, markup.list.numbered.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#c5c8c6</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown bold/italic</string>
+			<key>scope</key>
+			<string>markup.bold.markdown, markup.italic.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#de935f</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown italic</string>
+			<key>scope</key>
+			<string>markup.italic.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown bold</string>
+			<key>scope</key>
+			<string>markup.bold.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown Raw/Pre</string>
+			<key>scope</key>
+			<string>markup.raw.inline.markdown, markup.raw.block.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#5e8d87</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown String Link</string>
+			<key>scope</key>
+			<string>string.other.link.title.markdown, string.other.link.description.title.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#b5bd68</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown link</string>
+			<key>scope</key>
+			<string>markup.underline.link.markdown, markup.underline.link.image.markdown, meta.image.inline.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#81a2be</string>
+				<key>fontStyle</key>
+				<string>italic</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown quote</string>
+			<key>scope</key>
+			<string>markup.quote.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ec9076</string>
+			</dict>
+		</dict>
+
 		<!-- Comments -->
 		<dict>
 			<key>name</key>
