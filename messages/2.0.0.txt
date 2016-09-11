@@ -1,0 +1,2 @@
+## New Theme
+Introduction of new theme called `hybrid`.
