@@ -49,7 +49,7 @@
         "tab_overlap": 0,
         "tab_width": 120,
         "tab_min_width": 40,
-        "tab_height": 24,
+        "tab_height": 26,
         "mouse_wheel_switch": false
     },
 
@@ -107,7 +107,7 @@
         "class": "tab_label",
         "fade": true,
         "fg": [121, 123, 121],
-        "font.size": 11
+        "font.size": 12
     },
 
     {
@@ -685,6 +685,7 @@
     // Sidebar entry
     {
         "class": "sidebar_label",
+        "font.size": 12,
         "color": [101, 115, 127]
     },
     // Sidebar folder entry

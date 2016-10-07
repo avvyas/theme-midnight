@@ -28,6 +28,11 @@ If you are using `dark` theme, please use `dark` color scheme and if you are usi
 The easiest way to enable a color scheme is by going to
 `Sublime Text Menu -> Preferences -> Color Scheme -> Theme - Midnight -> Midnight.(dark|hybrid)`.
 
+## Color Palette
+
+### Moonlight Scheme
+Green – #43853d
+
 ### Example settings
 Choose the theme you like and put the code in your preferences file.
 
